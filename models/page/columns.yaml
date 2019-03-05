@@ -1,0 +1,20 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    url:
+        label: URL
+        searchable: true
+        width: 25%
+    title:
+        label: Title
+        searchable: true
+    created_at:
+        label: Created At
+        type:  datetime
+        width: 15%
+    updated_at:
+        label: Updated At
+        type:  datetime
+        width: 15%

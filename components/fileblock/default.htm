@@ -1,0 +1,7 @@
+<div>
+    <a href="{{ __SELF__.file.path|media }}">{{ __SELF__.file.title }}</a>
+    
+    {% if __SELF__.file.description %}
+    <p>{{ __SELF__.file.description }}</p>
+    {% endif %}
+</div>

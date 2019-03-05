@@ -1,0 +1,23 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    content:
+        type: hollingworth_contentblocks
+        default:
+            - { type: hollingworth_pages_richtext_block }
+
+secondaryTabs:
+    defaultTab: General
+    fields:
+        title:
+            label: Title
+        url:
+            label: URL
+        description:
+            label: Description
+            type:  textarea
+        tags:
+            label: Tags
+            type:  taglist

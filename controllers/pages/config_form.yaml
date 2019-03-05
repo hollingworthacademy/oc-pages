@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Page
+
+# Model Form Field configuration
+form: $/hollingworth/pages/models/page/fields.yaml
+
+# Model Class name
+modelClass: Hollingworth\Pages\Models\Page
+
+# Default redirect location
+defaultRedirect: hollingworth/pages/pages
+
+# Create page
+create:
+    title: Create Page
+    redirect: hollingworth/pages/pages/update/:id
+    redirectClose: hollingworth/pages/pages
+
+# Update page
+update:
+    title: Edit Page
+    redirect: hollingworth/pages/pages
+    redirectClose: hollingworth/pages/pages
+
+# Preview page
+preview:
+    title: Preview Page

@@ -1,0 +1,6 @@
+url:
+    label: URL
+    span:  left
+title:
+    label: Title
+    span:  right
