@@ -33,7 +33,9 @@ class Plugin extends PluginBase
      */
     public function register()
     {
-
+        CombineAssets::registerCallback(function ($combiner) {
+            $combiner->registerBundle(__DIR__.'/assets/less/pages.less');
+        });
     }
 
     /**
@@ -46,11 +48,7 @@ class Plugin extends PluginBase
         $pageManager = PageManager::instance();
 
         Event::listen('cms.router.beforeRoute', [$pageManager, 'findByUrl']);
-        Event::listen('cms.page.beforeRenderPage', [$pageManager, 'renderContent']);
-
-        CombineAssets::registerCallback(function ($combiner) {
-            $combiner->registerBundle(__DIR__.'/assets/less/pages.less');
-        });
+        Event::listen('cms.page.beforeRenderPage', [$pageManager, 'renderContent']);        
     }
 
     /**
