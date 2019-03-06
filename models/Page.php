@@ -7,6 +7,8 @@ use October\Rain\Database\Model;
  */
 class Page extends Model
 {
+    use \Hollingworth\Taggable\Traits\Taggable;
+
     /**
      * @var string The database table used by the model.
      */

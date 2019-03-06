@@ -8,7 +8,7 @@ class CreatePagesTable extends Migration
 {
     public function up()
     {
-        Schema::create('hollingworth_pages_pages', function(Blueprint $table) {
+        Schema::create('hollingworth_pages_pages', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('url');

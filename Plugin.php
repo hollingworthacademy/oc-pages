@@ -12,6 +12,14 @@ use System\Classes\CombineAssets;
 class Plugin extends PluginBase
 {
     /**
+     * @var array Plugin dependencies.
+     */
+    public $require = [
+        'hollingworth.contentblocks',
+        'hollingworth.taggable',
+    ];
+
+    /**
      * Returns information about this plugin.
      *
      * @return array

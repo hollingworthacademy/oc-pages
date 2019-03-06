@@ -21,3 +21,4 @@ secondaryTabs:
         tags:
             label: Tags
             type:  taglist
+            mode:  relation
