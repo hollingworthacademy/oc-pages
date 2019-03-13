@@ -101,6 +101,7 @@ class Plugin extends PluginBase
             \Hollingworth\Pages\Components\UrlBlock::class  => 'hollingworth_pages_url_block',
             \Hollingworth\Pages\Components\RichtextBlock::class => 'hollingworth_pages_richtext_block',
             \Hollingworth\Pages\Components\FileBlock::class => 'hollingworth_pages_file_block',
+            \Hollingworth\Pages\Components\ImageBlock::class => 'hollingworth_pages_image_block',
         ];
     }
 }

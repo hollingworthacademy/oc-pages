@@ -1,0 +1,7 @@
+<div>
+    <img src="{{ __SELF__.file.path|media }}" alt="{{ __SELF__.file.title }}">
+    
+    {% if __SELF__.file.description %}
+    <p>{{ __SELF__.file.description }}</p>
+    {% endif %}
+</div>

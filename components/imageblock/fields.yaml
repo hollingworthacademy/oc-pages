@@ -1,0 +1,13 @@
+file[path]:
+    label: File
+    type:  mediafinder
+    mode:  image
+    span:  left
+file[title]:
+    label: Title
+    span:  right
+file[description]:
+    label: Description
+    type:  textarea
+    size:  small
+    span:  right
