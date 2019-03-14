@@ -15,8 +15,8 @@ class Plugin extends PluginBase
      * @var array Plugin dependencies.
      */
     public $require = [
-        'hollingworth.contentblocks',
-        'hollingworth.taggable',
+        'Hollingworth.ContentBlocks',
+        'Hollingworth.Taggable',
     ];
 
     /**
