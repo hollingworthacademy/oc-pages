@@ -86,7 +86,14 @@ class Plugin extends PluginBase
      */
     public function registerNavigation()
     {
-        return [];
+        return [
+            'pages' => [
+                'label' => 'Pages',
+                'url'   => Backend::url('hollingworth/pages/pages'),
+                'icon'  => 'icon-file-o',
+                'iconSvg' => 'plugins/hollingworth/pages/assets/svg/pencil.svg',
+            ]
+        ];
     }
 
     /**
